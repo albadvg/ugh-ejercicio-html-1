@@ -1,0 +1,253 @@
+/***variables***/
+:root {
+    --gray : rgb(32, 42, 39);
+    --orange: rgb(157, 107, 14);
+}
+
+/***basic setup***/
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+section {
+    min-height: clamp(700px, 100vh, 6000px);
+    position: relative
+}
+
+/*utilities*/
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .7;
+}
+
+/****HEADER****/
+.header {
+    background-color: var(--gray);
+    padding: 10px 100px;
+}
+
+.header__logo {
+    display: inline-block;
+    width: 150px;
+}
+
+nav {
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/****HERO BANNER****/
+.hero {
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/paradiso-barcelona-mejor-bar-mundo-elle-gourmet-home-1664952474.jpg?crop=0.871xw:0.655xh;0.129xw,0.152xh&resize=1200:*);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.hero__bgd {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.hero__overlay {
+    background-color: var(--gray);
+}
+.hero__text {
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    top: calc(50vh - 100px);
+    left: calc(50vw - 150px);
+}
+.hero__italic {
+    margin: 0;
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 40px;
+    color: var(--orange);
+}
+.hero__title {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 50px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/****CONCEPTO****/
+.concepto {
+    background-image: url(https://wallpapers.com/images/hd/green-plant-aesthetic-56nw3y24prsozi0l.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.concepto__wrapper {
+    background-color: rgb(21, 21, 21);
+    position: relative;
+    height: 400px;
+    width: 500px;
+    padding: 70px;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 250px);
+    color: white;
+    font-size: 14px;
+    border: 1px solid var(--orange);
+}
+
+.concepto__overlay {
+    background-color: rgba(255, 255, 255, 0.782);
+}
+
+/***FOTOS****/
+.fotos {
+    background-image: url(https://wallpapers.com/images/hd/green-plant-aesthetic-56nw3y24prsozi0l.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 120px;
+}
+
+.fotos__wrapper {
+    position: relative;
+    margin: 0 auto;
+}
+
+.fotos__overlay {
+    background-color: var(--gray);
+}
+
+.fotos__item {
+    display: inline-block;
+    width: 350px;
+    margin: 10px;
+}
+
+/***CARTA***/
+.carta {
+    margin: 100px 0;
+}
+
+.carta__selector {
+    margin: 0 auto;
+    text-align: center;
+}
+.carta__page {
+    display: inline-block;
+    margin: 30px;
+}
+.carta__wrapper {
+    background-image: url(https://wallpapers.com/images/hd/green-plant-aesthetic-56nw3y24prsozi0l.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.carta__izq,
+.carta__der {
+    background-color: white;
+    display: inline-block;
+    padding: 60px 30px;
+    width: 48%;
+    vertical-align: top;
+}
+
+.carta__der {
+    margin-left: 30px;
+}
+
+.carta__producto p {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.carta__precio {
+    float: right;
+}
+
+.carta__download {
+    padding: 15px;
+    background-color: var(--orange);
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    margin-top: 40px;
+    width: 200px;
+    left: calc(50vw - 100px);
+    text-align: center;
+}
+
+/***RESERVAS***/
+.reservas {
+    background-image: url("https://www.mysticbarrels.com/cdn/shop/products/48inoaktable_eb051e9c-adab-479c-8073-da480e709f0c.jpg?v=1678240148");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+
+.reservas__overlay {
+    background-color: var(--gray);
+}
+
+.reservas__wrapper {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.reservas__izq,
+.reservas__der {
+    display: inline-block;
+    border: 2px solid white;
+    vertical-align: top;
+}
