@@ -1,23 +1,28 @@
 /***variables***/
 :root {
-    --gray : rgb(32, 42, 39);
-    --orange: rgb(157, 107, 14);
+    --darkBlue : rgb(32, 39, 42);
+    --orange: rgb(214, 123, 43);
 }
 
 /***basic setup***/
 html{
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 
 *,
 *::after,
 *::before {
     box-sizing: inherit;
+    border: 0;
+    padding: 0;
 }
 
 body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    color: var(--darkBlue);
     line-height: 1.5;
 }
 
@@ -28,6 +33,12 @@ img {
 h2 {
     font-size: 18px;
     text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    letter-spacing: 1px;
 }
 
 ul{
@@ -35,28 +46,51 @@ ul{
     padding-left: 0;
 }
 
+p {
+    margin: 0;
+}
+
 a{
     text-decoration: none;
+    color: var(--darkBlue);
 }
 
 section {
     min-height: clamp(700px, 100vh, 6000px);
-    position: relative
+    position: relative;
+    padding: 40px 0px;
 }
 
+
 /*utilities*/
+
 .overlay{
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    opacity: .7;
+    opacity: .8;
+}
+
+.btn1 {
+    padding: 10px;
+    background-color: var(--orange);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    margin-top: 40px;
+    width: 260px;
+    left: calc(50vw - 130px);
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 /****HEADER****/
 .header {
-    background-color: var(--gray);
+    background-color: var(--darkBlue);
     padding: 10px 100px;
 }
 
@@ -65,22 +99,25 @@ section {
     width: 150px;
 }
 
-nav {
+.header__nav {
     float: right;
 }
 
-nav li {
+
+.header__item {
     display: inline-block;
     padding: 20px;
 }
 
-nav a {
+.header__link {
     color: white;
+    padding: 8px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.header__link:hover {
+    border-bottom: 3px solid var(--orange);
 }
+
 
 /****HERO BANNER****/
 .hero {
@@ -90,34 +127,38 @@ nav a:hover {
 
 }
 .hero__bgd {
-    width: 100%;
-    height: 100%;
     position: absolute;
-    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .hero__overlay {
-    background-color: var(--gray);
+    background-color: var(--darkBlue);
 }
+
 .hero__text {
     color: white;
     text-align: center;
     position: relative;
-    width: 300px;
-    height: 200px;
-    top: calc(50vh - 100px);
-    left: calc(50vw - 150px);
+    width: 350px;
+    height: 240px;
+    top: calc(50vh - 120px);
+    left: calc(50vw - 175px);
 }
 .hero__italic {
-    margin: 0;
+    margin: 0;  
     font-family: 'Petit Formal Script', cursive;
-    font-size: 40px;
+    font-size: 60px;
     color: var(--orange);
 }
 .hero__title {
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 2px;
     margin: 0;
-    padding-bottom: 20px;
-    font-size: 50px;
+    margin-bottom: 20px;
+    font-size: 60px;
     color: white;
     border-bottom: 1px solid white;
 }
@@ -147,62 +188,93 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.782);
 }
 
+.concepto__img {
+    position: absolute;
+    top: -70px;
+}
+
+.concepto__img--izq {
+    left: -130px;
+    width: 220px;
+
+}
+
+.concepto__img--der {
+    right: -150px;
+    width: 290px;
+}
 /***FOTOS****/
 .fotos {
     background-image: url(https://wallpapers.com/images/hd/green-plant-aesthetic-56nw3y24prsozi0l.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px 120px;
+    padding: 30px 0;
+}
+
+.fotos__overlay {
+    background-color: var(--darkBlue);
 }
 
 .fotos__wrapper {
     position: relative;
+    width: 1200px;
     margin: 0 auto;
-}
-
-.fotos__overlay {
-    background-color: var(--gray);
 }
 
 .fotos__item {
     display: inline-block;
-    width: 350px;
+    width: 30%;
     margin: 10px;
 }
 
 /***CARTA***/
-.carta {
-    margin: 100px 0;
-}
+
 
 .carta__selector {
     margin: 0 auto;
     text-align: center;
 }
+
 .carta__page {
     display: inline-block;
-    margin: 30px;
+    margin: 0 30px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.carta__page:hover {
+    border-bottom: 2px solid var(--orange);
 }
 .carta__wrapper {
     background-image: url(https://wallpapers.com/images/hd/green-plant-aesthetic-56nw3y24prsozi0l.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1000px;
-    margin: 0 auto;
-    padding: 50px;
+    width: 1100px;
+    margin: 30px auto;
+    padding: 40px;
 }
 
 .carta__izq,
 .carta__der {
     background-color: white;
     display: inline-block;
-    padding: 60px 30px;
+    padding: 50px 50px;
     width: 48%;
     vertical-align: top;
 }
 
 .carta__der {
     margin-left: 30px;
+}
+
+.carta__section {
+    margin-bottom: 40px;
+}
+
+.carta__producto {
+    letter-spacing: 1px;
 }
 
 .carta__producto p {
@@ -215,16 +287,7 @@ nav a:hover {
 }
 
 .carta__download {
-    padding: 15px;
-    background-color: var(--orange);
-    color: white;
-    font-weight: 600;
-    display: inline-block;
-    position: relative;
-    margin-top: 40px;
-    width: 200px;
-    left: calc(50vw - 100px);
-    text-align: center;
+
 }
 
 /***RESERVAS***/
@@ -232,22 +295,304 @@ nav a:hover {
     background-image: url("https://www.mysticbarrels.com/cdn/shop/products/48inoaktable_eb051e9c-adab-479c-8073-da480e709f0c.jpg?v=1678240148");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px;
+    color: white;
+    font-size: 13px;
 }
 
 .reservas__overlay {
-    background-color: var(--gray);
+    background-color: var(--darkBlue);
 }
 
 .reservas__wrapper {
     position: relative;
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
 }
 
 .reservas__izq,
 .reservas__der {
+    width: 48%;
     display: inline-block;
-    border: 2px solid white;
     vertical-align: top;
 }
+
+.reservas__der {
+    float: right;
+}
+
+/*form*/
+.form {
+    margin-bottom: 20px;
+}
+.form__fieldset {
+    border: none;
+    margin-bottom: 30px ;
+}
+.form__label {
+    font-weight: bold;
+}
+
+.form__input{
+    padding: 8px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 15px;
+    background-color: white;
+    color: var(--darkBlue);
+}
+
+form > * {
+    width: 100%;
+}
+
+label[for="personas"],
+label[for="hora"],
+select#personas,
+select#hora {
+    display: inline-block;
+    width: 49%;
+}
+
+label[for="hora"],
+select#hora {
+    float: right;
+}
+
+select#mesa {
+    width: 100%;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+    cursor: pointer;
+}
+/*opciones*/
+.reservas__opciones {
+    font-weight: bold;
+}
+
+.reservas__boton {
+    background-color: white;
+    color: var(--darkBlue);
+    text-align: center;
+    display: inline-block;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+/*info*/
+.reservas__pub {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.reservas__pub-subtitle {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.reservas__info {
+    margin-top: 30px;
+}
+
+/***BLOG***/
+.blog__articulos {
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.blog__articulo {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 20px;
+    width: 30%;
+    height: 600px;
+    background-color: blueviolet;
+    position:relative;
+    
+}
+
+.blog__overlay {
+    background-color: var(--darkBlue);
+}
+.blog__articulo:nth-child(1) {
+    background-image: url(./img/blog1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog__articulo:nth-child(2) {
+    background-image: url(./img/blog2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog__articulo:nth-child(3) {
+    background-image: url(./img/blog3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog__pub {
+    position: absolute;
+    font-size: 12px;
+    display: inline-block;
+    padding: 4px 12px;
+    border: 1px solid white;
+}
+
+.blog__main {
+    height: 50%;
+    padding: 0 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.blog__date {
+    font-size: 10px;
+}
+
+.blog__title {
+    font-size: 25px;
+}
+.blog__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid white;
+}
+
+.blog__footer-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.blog__icon {
+    width: 20px;
+}
+
+.blog__footer-txt {
+    display: inline-block;
+}
+
+/***CONTACTO***/
+.contacto {
+    min-height: 450px;
+    background-image: url("./img/cake.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    /* font-size: 13px; */
+}
+.contacto__wrapper {
+    position: relative;
+    color: white;
+    width: 1200px;
+    margin: 0 auto;
+}
+.contacto__overlay {
+    background-color: var(--darkBlue);
+}
+.contacto__logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.contacto__subtitle {
+    text-align: center;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+.contacto__dato {
+    display: inline-block;
+    width: 33%;
+}
+
+.contacto__icon {
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+.contacto__info {
+    text-align: center;
+}
+
+/***RRSS***/
+.rrss {
+    min-height: 300px;
+}
+.rrss__list {
+    width: 500px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.rrss__item {
+    display: inline-block;
+}
+
+.rrss__item--insta {
+    float: right;
+}
+
+.rrss__link {
+    border: 2px solid var(--darkBlue);
+    padding: 15px 45px;
+    color: var(--darkBlue);
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+/***FOOTER***/
+.footer {
+    background-color: rgb(205, 205, 205);
+    padding: 50px 200px;
+    position: relative;
+}
+
+.footer__wrapper {
+    padding-bottom: 80px;
+}
+.footer__item {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+.footer__title {
+    color: var(--darkBlue);
+    margin-bottom: 20px;
+}
+
+.footer__copyright {
+    display: inline-block;
+}
+
+.footer__rrss {
+    float: right;
+}
+
+.footer__icon {
+    width: 20px;
+}
+
+.footer__up {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+

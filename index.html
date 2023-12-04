@@ -7,22 +7,22 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Raleway:wght@200;400;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Raleway:wght@200;400;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <img src="https://png2.cleanpng.com/sh/3bdfe1627aa68c8b3a9d59172f85813f/L0KzQYm3VcE1N5N8R91yc4Pzfri0kQVjNZDzReZxZT3mdbXokr1td5h0RdRqcj3mebXskr02aZcATqhqYkPpRYeAUr45PmE3UaYANUG4Qoe5WcQyQGg3Tas9LoDxd1==/kisspng-pub-on-the-cedar-logo-bar-cider-5af966ab3f5672.8602945515262941872594.png" class="header__logo">
-        <nav>
+        <nav class="header__nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#concepto">Concepto</a></li>
-                <li><a href="#fotos">Fotos</a></li>
-                <li><a href="#menu">Menú</a></li>
-                <li><a href="#reservas">Reservas</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li class="header__item"><a href="#" class="header__link">Home</a></li>
+                <li class="header__item"><a href="#concepto" class="header__link">Concepto</a></li>
+                <li class="header__item"><a href="#fotos" class="header__link">Fotos</a></li>
+                <li class="header__item"><a href="#menu" class="header__link">Menú</a></li>
+                <li class="header__item"><a href="#reservas" class="header__link">Reservas</a></li>
+                <li class="header__item"><a href="#blog" class="header__link">Blog</a></li>
+                <li class="header__item"><a href="#contacto" class="header__link">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -43,7 +43,8 @@
         <section id="concepto" class="concepto">
             <div class="overlay concepto__overlay"></div>
             <div class="concepto__wrapper">
-                <img src="" alt="">
+                <img src="./img/leaf.png" class="concepto__img concepto__img--izq" alt="">
+                <img src="./img/peach.png" class="concepto__img concepto__img--der" alt="">
                 <h2>CONCEPTO</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dicta optio enim, magni, aut reiciendis asperiores debitis quaerat odio quod corporis corrupti tempora a quas omnis. Molestiae consectetur laborum illo?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dicta optio enim, magni, aut reiciendis asperiores debitis quaerat odio quod corporis corrupti tempora a quas omnis. Molestiae consectetur laborum illo?</p>
@@ -53,10 +54,14 @@
         <section id="fotos" class="fotos">
             <div class="overlay fotos__overlay"></div>
             <ul class="fotos__wrapper">
-                <li class="fotos__item"><img src="https://img.freepik.com/foto-gratis/celebracion-vida-nocturna-establecimiento-bares-multicolores-ia-generativa_188544-12375.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699315200&semt=ais" alt=""></li>
+                <li class="fotos__item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzCz6caBl8CfA2FpdtDIE3_RWnsmhMIDfxsw&usqp=CAU" alt=""></li>
+                <li class="fotos__item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzCz6caBl8CfA2FpdtDIE3_RWnsmhMIDfxsw&usqp=CAU" alt=""></li>
                 <li class="fotos__item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzCz6caBl8CfA2FpdtDIE3_RWnsmhMIDfxsw&usqp=CAU" alt=""></li>
                 <li class="fotos__item"><img src="https://media.istockphoto.com/id/1303977605/photo/five-cocktails-in-hands-joined-in-celebratory-toast.jpg?s=612x612&w=0&k=20&c=QtnWuVeQCwKOfXIISxfkuDhQTe15qnnKOFKgpcH1Vko=" alt=""></li>
-                <li class="fotos__item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdn2Ur51IFtqY3pN4WIvxxtBY1PAnjqWATHA&usqp=CAU" alt=""></li>
+                <li class="fotos__item"><img src="https://media.istockphoto.com/id/1303977605/photo/five-cocktails-in-hands-joined-in-celebratory-toast.jpg?s=612x612&w=0&k=20&c=QtnWuVeQCwKOfXIISxfkuDhQTe15qnnKOFKgpcH1Vko=" alt=""></li>
+                <li class="fotos__item"><img src="https://media.istockphoto.com/id/1303977605/photo/five-cocktails-in-hands-joined-in-celebratory-toast.jpg?s=612x612&w=0&k=20&c=QtnWuVeQCwKOfXIISxfkuDhQTe15qnnKOFKgpcH1Vko=" alt=""></li>
+                <li class="fotos__item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRODwhQVRhxFzj53SnAoqDPMLUWZUyj7hvFA&usqp=CAU" alt=""></li>
+                <li class="fotos__item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRODwhQVRhxFzj53SnAoqDPMLUWZUyj7hvFA&usqp=CAU" alt=""></li>
                 <li class="fotos__item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRODwhQVRhxFzj53SnAoqDPMLUWZUyj7hvFA&usqp=CAU" alt=""></li>
             </ul>          
         </section>
@@ -72,7 +77,7 @@
             <div class="carta__wrapper">
                 <div class="carta__overlay"></div>
                 <div class="carta__izq">
-                    <div>
+                    <div class="carta__section">
                         <h3>DULCES</h3>
                         <ul>
                             <li class="carta__producto">
@@ -122,7 +127,7 @@
                         </ul>
                     </div>
                     
-                    <div>
+                    <div class="carta__section">
                         <h3>DESAYUNOS</h3>
                         <ul>
                             <li class="carta__producto">
@@ -149,7 +154,7 @@
                         
                     </div>
                     
-                    <div>
+                    <div class="carta__section">
                         <h3>ZUMOS</h3>
                         <ul>
                             <li class="carta__producto">
@@ -175,7 +180,7 @@
                         </ul>
                     </div>
 
-                    <div>
+                    <div class="carta__section">
                         <h3>MILKSHAKES</h3>
                         <ul>
                             <li class="carta__producto">
@@ -199,7 +204,7 @@
                 </div>
 
                 <div class="carta__der">
-                    <div>
+                    <div class="carta__section">
                         <h3>SALADOS</h3>
                         <ul>
                             <li class="carta__producto">
@@ -249,7 +254,7 @@
                         </ul>
                     </div>
 
-                    <div>
+                    <div class="carta__section">
                         <h3>BAGUETTE</h3>
                         <ul>
                             <li class="carta__producto">
@@ -267,7 +272,7 @@
                         </ul>
                     </div>
 
-                    <div>
+                    <div class="carta__section">
                         <h3>FRAPUCCINOS</h3>
                         <ul>
                             <li class="carta__producto">
@@ -293,7 +298,7 @@
                         </ul>
                     </div>
 
-                    <div>
+                    <div class="carta__section">
                         <h3>SMOOTHIE CON BASE DE ZUMO O YOGURT</h3>
                         <ul>
                             <li class="carta__producto">
@@ -319,7 +324,7 @@
                         </ul>
                     </div>
 
-                    <div>
+                    <div class="carta__section">
                         <h3>TES E INFUSIONES</h3>
                         <ul>
                             <li class="carta__producto">
@@ -334,7 +339,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="carta__download">DESCARGAR CARTA</a>
+            <a href="#" class="carta__download btn1">DESCARGAR CARTA</a>
         </section>
 
         <section class="reservas">
@@ -343,39 +348,43 @@
                 <h2>RESERVAS</h2>
 
                 <div class="reservas__izq">
-                    <form action="" method="post">
-                        <label for="personas">Personas</label>
-                        <select name="personas" id="personas">
-                            <option value="1-per">1 persona</option>
-                            <option value="2-per">2 personas</option>
-                            <option value="3-per">3 personas</option>
-                        </select>
+                    <form action="" method="post" class="form">
+                        <fieldset class="form__fieldset">
+                            <label for="personas" class="form__label">Personas</label>
+                            <label for="hora" class="form__label">Hora</label>
     
-                        <label for="hora">Hora</label>
-                        <select name="hora" id="hora">
-                            <option value="13h">13:00</option>
-                            <option value="14h">14:00</option>
-                            <option value="15h">15:00</option>
-                        </select>
-    
-                        <label for="mesa">Tipo de mesa</label>
-                        <select name="mesa" id="mesa">
-                            <option value="alta">alta</option>
-                            <option value="sillones">sillones</option>
-                            <option value="terraza">terraza</option>
-                        </select>       
-                        <input type="submit" value="Reservar">
+                            <select name="personas" id="personas" class="form__input">
+                                <option value="1-per">1 persona</option>
+                                <option value="2-per">2 personas</option>
+                                <option value="3-per">3 personas</option>
+                            </select>
+        
+                            <select name="hora" id="hora" class="form__input">
+                                <option value="13h">13:00</option>
+                                <option value="14h">14:00</option>
+                                <option value="15h">15:00</option>
+                            </select>
+        
+                            <label for="mesa" class="form__label">Tipo de mesa</label>
+                            <select name="mesa" id="mesa" class="form__input">
+                                <option value="alta">alta</option>
+                                <option value="sillones">sillones</option>
+                                <option value="terraza">terraza</option>
+                            </select>
+                        </fieldset>
+                               
+                        <input type="submit" value="Reservar" class="form__input">
                     </form>
 
-                    <p>si no encuentra disponibilidad, apúntese en la lista de espera</p>
-                    <a href="#">Lista de espera</a>
-                    <a href="#">Solicitud de grupo</a>
+                    <p class="reservas__opciones">si no encuentra disponibilidad, apúntese en la lista de espera</p>
+                    <a href="#" class="reservas__boton">Lista de espera</a>
+                    <a href="#" class="reservas__boton">Solicitud de grupo</a>
                 </div>
                 
 
                 <div class="reservas__der">
-                    <p>MOZZABAR</p>
-                    <p>FOOD & DRINK</p>
+                    <p class="reservas__pub">THE PUB</p>
+                    <p class="reservas__pub-subtitle">FOOD & DRINKS</p>
     
                     <div class="reservas__info">
                         <p>Conde Peñalver 64</p>
@@ -387,97 +396,152 @@
         </section>
 
         <section class="blog">
-            <h3>BLOG</h3>
+            <h2>BLOG</h2>
             <ul class="blog__articulos">
                 <li class="blog__articulo">
-                    <p>02/04/2023</p>
-                    <h4>MOZZA BAR ABRE NUEVA TERRAZA DE VERANO EN BOMBAY LOUNGE</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quam, deseruntunt?</p>
+                    <div class="overlay blog__overlay"></div>
+                    <p class="blog__pub">THE PUB</p>
+                    <div class="blog__main">
+                        <p class="blog__date">02/04/2023</p>
+                        <h4 class="blog__title">MOZZA BAR ABRE NUEVA TERRAZA DE VERANO EN BOMBAY LOUNGE</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quam, deseruntunt?</p>
+                    </div>
+                    <ul class="blog__footer">
+                        <li class="blog__footer-item">
+                            <img src="./img/admin.png" alt="" class="blog__icon">
+                            <p class="blog__footer-txt">admin</p>
+                        </li>
+                        <li class="blog__footer-item">
+                            <img src="./img/comment.png" alt="" class="blog__icon">
+                            <p class="blog__footer-txt">0</p>
+                        </li>
+                        <li class="blog__footer-item">
+                            <img src="./img/heart.png" alt="" class="blog__icon">
+                            <p class="blog__footer-txt">1</p>
+                        </li class="blog__footer-item">
+                    </ul>  
                 </li>
 
                 <li class="blog__articulo">
-                    <p class="fecha">02/04/2023</p>
-                    <h4>MOZZA BAR ABRE NUEVA TERRAZA DE VERANO EN BOMBAY LOUNGE</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quam, deseruntunt?</p>
+                    <div class="overlay blog__overlay"></div>
+                    <p class="blog__pub">THE PUB</p>
+                    <div class="blog__main">
+                        <p class="blog__date">02/04/2023</p>
+                        <h4 class="blog__title">MOZZA BAR ABRE NUEVA TERRAZA DE VERANO EN BOMBAY LOUNGE</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quam, deseruntunt?</p>
+                    </div>
+                    <ul class="blog__footer">
+                        <li class="blog__footer-item">
+                            <img src="./img/admin.png" alt="" class="blog__icon">
+                            <p class="blog__footer-txt">admin</p>
+                        </li>
+                        <li class="blog__footer-item">
+                            <img src="./img/comment.png" alt="" class="blog__icon">
+                            <p class="blog__footer-txt">0</p>
+                        </li>
+                        <li class="blog__footer-item">
+                            <img src="./img/heart.png" alt="" class="blog__icon">
+                            <p class="blog__footer-txt">1</p>
+                        </li class="blog__footer-item">
+                    </ul>  
                 </li>
 
                 <li class="blog__articulo">
-                    <p class="fecha">02/04/2023</p>
-                    <h4>MOZZA BAR ABRE NUEVA TERRAZA DE VERANO EN BOMBAY LOUNGE</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quam, deseruntunt?</p>
+                    <div class="overlay blog__overlay"></div>
+                    <p class="blog__pub">THE PUB</p>
+                    <div class="blog__main">
+                        <p class="blog__date">02/04/2023</p>
+                        <h4 class="blog__title">MOZZA BAR ABRE NUEVA TERRAZA DE VERANO EN BOMBAY LOUNGE</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quam, deseruntunt?</p>
+                    </div>
+                    <ul class="blog__footer">
+                        <li class="blog__footer-item">
+                            <img src="./img/admin.png" alt="" class="blog__icon">
+                            <p class="blog__footer-txt">admin</p>
+                        </li>
+                        <li class="blog__footer-item">
+                            <img src="./img/comment.png" alt="" class="blog__icon">
+                            <p class="blog__footer-txt">0</p>
+                        </li>
+                        <li class="blog__footer-item">
+                            <img src="./img/heart.png" alt="" class="blog__icon">
+                            <p class="blog__footer-txt">1</p>
+                        </li class="blog__footer-item">
+                    </ul>   
                 </li>
             </ul>
-            <a href="#">VER TODAS LAS ENTRADAS</a>
+            <a href="#" class="blog__link btn1">VER TODAS LAS ENTRADAS</a>
         </section>
 
         <section class="contacto">
-            <img src="https://png2.cleanpng.com/sh/3bdfe1627aa68c8b3a9d59172f85813f/L0KzQYm3VcE1N5N8R91yc4Pzfri0kQVjNZDzReZxZT3mdbXokr1td5h0RdRqcj3mebXskr02aZcATqhqYkPpRYeAUr45PmE3UaYANUG4Qoe5WcQyQGg3Tas9LoDxd1==/kisspng-pub-on-the-cedar-logo-bar-cider-5af966ab3f5672.8602945515262941872594.png" width="100px" alt="logo">
-            <p>VEN CUANDO QUIERAS</p>
-            <ul class="contacto__datos">
-                <li>
-                    <img src="https://www.svgrepo.com/show/103810/map-pin.svg" alt="" width="30px">
-                    <p>Calle conde Peñalver 64 <br>
-                        28006 - Madrid</p>
-                </li>
-                <li>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Phone-icon.svg/590px-Phone-icon.svg.png" width="20px">
-                    <p>940 382 839</p>
-                </li>
-
-                <li>
-                    <img src="https://www.svgrepo.com/show/479653/email-9.svg" alt="" width="25px">
-                    <p>hola@lola.com</p>
-                </li>
-            </ul>
+            <div class="overlay contacto__overlay"></div>
+            <div class="contacto__wrapper">
+                <img src="https://png2.cleanpng.com/sh/3bdfe1627aa68c8b3a9d59172f85813f/L0KzQYm3VcE1N5N8R91yc4Pzfri0kQVjNZDzReZxZT3mdbXokr1td5h0RdRqcj3mebXskr02aZcATqhqYkPpRYeAUr45PmE3UaYANUG4Qoe5WcQyQGg3Tas9LoDxd1==/kisspng-pub-on-the-cedar-logo-bar-cider-5af966ab3f5672.8602945515262941872594.png" width="100px" alt="logo" class="contacto__logo">
+                <p class="contacto__subtitle">VEN CUANDO QUIERAS</p>
+                <ul class="contacto__datos">
+                    <li class="contacto__dato">
+                        <img src="https://www.svgrepo.com/show/103810/map-pin.svg" alt="" class="contacto__icon">
+                        <p class="contacto__info">Calle conde Peñalver 64 <br>
+                            28006 - Madrid</p>
+                    </li>
+                    <li class="contacto__dato">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Phone-icon.svg/590px-Phone-icon.svg.png" class="contacto__icon">
+                        <p class="contacto__info">940 382 839</p>
+                    </li>
+    
+                    <li class="contacto__dato">
+                        <img src="https://www.svgrepo.com/show/479653/email-9.svg" alt="" class="contacto__icon">
+                        <p class="contacto__info">hola@lola.com</p>
+                    </li>
+                </ul>
+            </div>
+           
         </section>
 
         <section class="rrss">
-            <h3>SÍGUENOS</h3>
-            <ul>      
-                <li><a href="#">FACEBOOK</a></li>
-                <li><a href="#">INSTAGRAM</a></li>
+            <h2>SÍGUENOS</h2>
+            <ul class="rrss__list">      
+                <li class="rrss__item rrss__item--fb"><a href="#" class="rrss__link">FACEBOOK</a></li>
+                <li class="rrss__item rrss__item--insta"><a href="#" class="rrss__link">INSTAGRAM</a></li>
             </ul>  
         </section>
     </main>
 
-    <footer>
-        <div>
-            <div>
-                <h4>ENLACES DE INTERÉS</h4>
+    <footer class="footer">
+        <ul class="footer__wrapper">
+            <li class="footer__item">
+                <h4 class="footer__title">ENLACES DE INTERÉS</h4>
                 <ul>
                     <li><a href="#">Aviso Legal</a></li>
                     <li><a href="#">Cookies</a></li>
                 </ul>
             </div>
-            <div>
-                <h4>HORARIOS</h4>
+            <li class="footer__item">
+                <h4 class="footer__title">HORARIOS</h4>
                 <ul>        
                     <li>Lunes a Domingo</li>
                     <li>7:30 - 01:30</li>
                 </ul>
-            </div>
-            <div>
-                <h4>CONTACTO</h4>
+            </li>
+            <li class="footer__item">
+                <h4 class="footer__title">CONTACTO</h4>
                 <ul>
                     <li>C/Conde Peñalver 64</li>
                     <li>28006 Madrid</li>
                     <li></li>
                     <li>910 258 327</li>
                     <li>holi@loli.es</li>
-                </ul>
-                
-
-                
+                </ul>      
             </div>
-        </div>
+        </ul>
         <div>
-            <p>2017. Todos los derechos reservados</p>
-            <div class="rrss-footer">
-                <a href="#"><img src="" alt=""></a>
-                <a href="#"><img src="" alt=""></a>
+            <p class="footer__copyright">2017. Todos los derechos reservados</p>
+            <div class="footer__rrss">
+                <a href="#"><img src="./img/instagram.png" alt="" class="footer__icon"></a>
+                <a href="#"><img src="./img/facebook.png" alt="" class="footer__icon"></a>
             </div>
         </div>
-        <a href="#"><i></i></a>
+        <a href="#header" class="footer__up"><img src="./img/up.png" alt="" class="footer__icon"></a>
     </footer>
 
 </body>
