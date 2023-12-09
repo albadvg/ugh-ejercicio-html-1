@@ -1,7 +1,7 @@
 /***variables***/
 :root {
     --darkBlue : rgb(32, 39, 42);
-    --orange: rgb(214, 123, 43);
+    --orange: #ec5101;
 }
 
 /***basic setup***/
@@ -44,6 +44,7 @@ h3 {
 ul{
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
 }
 
 p {
@@ -141,11 +142,10 @@ section {
 .hero__text {
     color: white;
     text-align: center;
-    position: relative;
-    width: 350px;
-    height: 240px;
-    top: calc(50vh - 120px);
-    left: calc(50vw - 175px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .hero__italic {
     margin: 0;  
